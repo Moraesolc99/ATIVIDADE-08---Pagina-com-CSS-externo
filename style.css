@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 95vw; /* usa 95% da largura da tela */
+    max-width: 95vw;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -19,44 +19,52 @@ body {
 
 #imagem-cabecalho {
     width: 100%;
-    height: auto;  
-    max-height: 400px; 
-    object-fit: cover; 
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
     display: block;
     border-radius: 10px;
 }
 
 main {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     align-items: flex-start;
-    gap: 40px;
+    padding: 0 15px;
 }
 
 .texto {
     flex: 1;
-    padding: 20px 0;
+    padding-right: 30px;
+    font-size: 1.05rem;
+    line-height: 1.6;
     text-align: justify;
-    box-sizing: border-box;
+    width: 70%;
 }
 
 .texto p {
-    line-height: 1.6;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .imagens-laterais {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
+    width: 380px;
+    flex-shrink: 0;
+    margin-left: 20px;
 }
 
 .imagens-laterais img {
-    width: 300px;
-    border-radius: 8px;
-    transition: transform 0.2s ease;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
 
 .imagens-laterais a:hover img {
     transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
