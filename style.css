@@ -1,4 +1,5 @@
 body {
+    -webkit-text-size-adjust: 100%;
     background-color: #111;
     color: #fff;
     font-family: Arial, sans-serif;
@@ -36,14 +37,17 @@ main {
 .texto {
     flex: 1;
     padding-right: 30px;
-    font-size: 1.05rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.8;
     text-align: justify;
-    width: 70%;
+    width: 60%;
+    hyphens: auto;
+    word-spacing: -0.5px;
 }
 
 .texto p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    min-height: 4.5em;
 }
 
 .imagens-laterais {
